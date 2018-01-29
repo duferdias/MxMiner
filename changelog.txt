@@ -1,0 +1,30 @@
+2017-11-05 MxMiner 0.2 (Windows)
+========================
+- Added full control over the AMD mining parameters. Use -ol to set the local worksize and -og to set the global worksize
+Values must be increments of 32. Local worksize defaults to 128 while the global worksize defaults to 4096
+Tweaking these settings can give a performance boost. For multiple cards use the same method as for -cd e.g -ol 128 128 128
+- removed the ability to mine without supplying an address to prevent people unknowningly mining to the default example address
+- Micro optimization in CPU miner.
+- Donation fee is now optional and set to 1%. If you don't want to support my efforts for the minexcoin community it can be disabled
+at any time by specifying the -nf parameter
+- Measures to hopefully prevent miner from detected as an unwanted mining application by anti-virus software
+
+GUI:
+- 6th GPU device can now be selected in the GUI
+- A maximum of 8 cards can now be selected from the GUI
+- Added auto detection of platform ID for AMD devices. Assumed to be always 1 before, this is not the case
+- Added option to the GUI to disable the 1% donation
+- Fixed the calculation of expected profits
+- Fix for fetching current wallet balance
+
+
+2017-10-06 MxMiner 0.17a
+========================
+- Cuda Solver now supports card with SM3.0 and higher (Originally SM5.0+) for both Windows & Linux.
+- CPU Threads are now automatically calculated when the -t parameter is omitted (75% of capacity)
+- Linux CPU Miner now supports the AVX and AVX2 instructions set. Auto selects best available.
+- Implemented miner API for control of workers. Supported Functions:
+    - Get Memory usage, uptime, hashrate, rejected shares, worker settings
+    - Change worker settings (current session only)
+    - Restart worker to apply changes in settings or when your worker is stuck.
+- Other minor changes
