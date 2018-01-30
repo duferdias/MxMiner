@@ -1,11 +1,12 @@
 # Minexcoin Mining App (MxMiner v0.20.1) by Racquemis
 
-## Minexcoin CPU & CUDA Miner
-
-## Binaries are available for Windows And Linux. 64 bit only.
+Minexcoin CPU & CUDA Miner
+-
+Binaries are available for Windows And Linux. 64 bit only.
+-
 ```
 Windows: CPU (SSE2,AVX,AVX2) & CUDA (Nvidia GPU) & OpenCL (AMD + Nvidia GPU)
-Linux:   (SSE2,AVX,AVX2) & CUDA (Nivida GPU)
+Linux:   CPU (SSE2,AVX,AVX2) & CUDA (Nivida GPU)
 ```
 ```
 Pools: eu.minexpool.nl
@@ -19,8 +20,8 @@ Make sure you installed the latest version of 'Visual C++ 2013 Redistributable x
 
 Next, Edit the start_mining.bat file. The example below is for cpu mining,
 ```
-EU:       mxminer -l eu -u <Wallet Address> -p <Anything> -t <Number of Threads>
-ASIA:     mxminer -l asia -u <Wallet Address> -p <Anything> -t <Number of Threads>
+EU:    mxminer -l eu -u <Wallet Address> -p <Anything> -t <Number of Threads>
+ASIA:  mxminer -l asia -u <Wallet Address> -p <Anything> -t <Number of Threads>
 ```
 
 Example:
@@ -59,9 +60,9 @@ mxminer -l eu -u x123d56789A4C7c7F34k3 -t 6 -op 0 -od 0 1 -ot 2 2
 
 The miner supports the AVX and AVX2 instruction for faster mining. These are selected automatically to the capabilities of your CPU. Use parameter -e to force SSE2 or AVX mode.
 ```
-SSE2:    -e 1
-AVX:     -e 2
-AVX2:    -e 3
+SSE2:  -e 1
+AVX:   -e 2
+AVX2:  -e 3
 ```
 
 Instructions for Linux (tested with Ubuntu 16.04)
@@ -87,5 +88,3 @@ To use the alternative port 3333 start the miner with the -z parameter.
 If you have problems reconnecting on connection loss. consider using a bat file to automatically restarts the miner when it exits use the respawnMiner.bat file for this. Don't forget to change the mining parameters in this file first. Also do not remove the -ed parameter. This parameter makes sure the process is terminated when connection is lost, making sure the bat file can do it's work.
 
 There is also an API which can be used to restart the miner externally.
-
-
