@@ -1,9 +1,8 @@
-# Minexcoin Mining App (MxMiner v0.20.1) by Racquemis
+# Minexcoin CPU, CUDA & OpenCL Miner v0.17a by Racquemis
 
-Minexcoin CPU & CUDA Miner
--
 Binaries are available for Windows And Linux. 64 bit only.
 -
+For Windows is available the version 0.20.1 of MxMiner. Information in the changelog file.
 ```
 Windows: CPU (SSE2,AVX,AVX2) & CUDA (Nvidia GPU) & OpenCL (AMD + Nvidia GPU)
 Linux:   CPU (SSE2,AVX,AVX2) & CUDA (Nivida GPU)
