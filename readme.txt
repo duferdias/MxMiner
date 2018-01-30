@@ -1,6 +1,6 @@
 Minexcoin CPU & CUDA Miner
 
-Mxminer v0.20.1 by Racquemis
+Mxminer v0.17a by Racquemis
 
 Binaries are available for Windows And Linux. 64 bit only.
 
