@@ -17,7 +17,6 @@ GUI:
 - Fixed the calculation of expected profits
 - Fix for fetching current wallet balance
 
-
 2017-10-06 MxMiner 0.17a
 ========================
 - Cuda Solver now supports card with SM3.0 and higher (Originally SM5.0+) for both Windows & Linux.
@@ -28,4 +27,3 @@ GUI:
     - Change worker settings (current session only)
     - Restart worker to apply changes in settings or when your worker is stuck.
 - Other minor changes
-
