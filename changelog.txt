@@ -20,11 +20,12 @@ GUI:
 
 2017-10-06 MxMiner 0.17a
 ========================
-- Cuda Solver now supports card with SM3.0 and higher (Originally SM5.0+) for both Windows & Linux.
+- Cuda Solver now supports card with SM3.0 and higher (Originally SM5.0+) for both WindowsÂ & Linux.
 - CPU Threads are now automatically calculated when the -t parameter is omitted (75% of capacity)
 - Linux CPU Miner now supports the AVX and AVX2 instructions set. Auto selects best available.
 - Implemented miner API for control of workers. Supported Functions:
-    - Get Memory usage, uptime, hashrate, rejected shares, worker settings
-    - Change worker settings (current session only)
-    - Restart worker to apply changes in settings or when your worker is stuck.
+Â Â Â  - Get Memory usage, uptime, hashrate, rejected shares, worker settings
+Â Â Â  - Change worker settings (current session only)
+Â Â Â  - Restart worker to apply changes in settings or when your worker is stuck.
 - Other minor changes
+
