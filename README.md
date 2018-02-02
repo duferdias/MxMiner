@@ -8,8 +8,7 @@ Windows: CPU (SSE2,AVX,AVX2) & CUDA (Nvidia GPU) & OpenCL (AMD + Nvidia GPU)
 Linux:   CPU (SSE2,AVX,AVX2) & CUDA (Nivida GPU)
 ```
 ```
-Pools: eu.minexpool.nl
-       asia.minexpool.nl
+Pool: eu.minexpool.nl
 ```       
 
 Instructions for Windows
@@ -19,8 +18,7 @@ Make sure you installed the latest version of 'Visual C++ 2013 Redistributable x
 
 Next, Edit the start_mining.bat file. The example below is for cpu mining,
 ```
-EU:    mxminer -l eu -u <Wallet Address> -p <Anything> -t <Number of Threads>
-ASIA:  mxminer -l asia -u <Wallet Address> -p <Anything> -t <Number of Threads>
+mxminer -l eu -u <Wallet Address> -p <Anything> -t <Number of Threads>
 ```
 
 Example:
